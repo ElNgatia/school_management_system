@@ -3,6 +3,9 @@ import 'user.dart';
 class Teacher extends User {
   final String tscNumber;
   final String password;
+  final List<String> classes;
+  final List<String> subjects;
+  final bool isClassTeacher;
 
   Teacher({
       required super.id,
@@ -10,8 +13,11 @@ class Teacher extends User {
       required super.lastName,
       required super.role,
       required super.profileImageUrl,
-      required this.tscNumber,
       required super.email,
-      required this.password
+      required this.tscNumber,
+      required this.password,
+      required this.classes,
+      required this.subjects,
+      required this.isClassTeacher
       });
 }

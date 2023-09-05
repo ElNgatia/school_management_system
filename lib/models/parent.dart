@@ -8,8 +8,10 @@ class Parent extends User {
       required super.firstName,
       required super.lastName,
       required super.role,
-      required super.profileImageUrl,
+      String? profileImageUrl,
       required super.email,
-      required this.password
-      });
+      required this.password})
+      : super(
+          profileImageUrl: profileImageUrl ?? 'default_profile_image_url',
+        );
 }
