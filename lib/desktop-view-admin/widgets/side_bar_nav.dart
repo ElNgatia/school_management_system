@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:school_management_system/core/auth_service.dart';
 import 'package:school_management_system/pages/login_page.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -92,17 +93,9 @@ class _SideBarNavState extends State<SideBarNav> {
               title: 'Logout',
               icon: Icons.logout,
               onSelected: () async {
-                await supabase.auth.signOut();
-                await supabase.auth.refreshSession();
-                await Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => LoginPage()),
-                    
-                    (route) => false);
-
-                // Navigator.of(context).pushAndRemoveUntil(, (route) => false);
+                AuthService().signOut(context);
               },
               includeInCallback: true,
-              
             )
           ],
         ),

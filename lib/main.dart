@@ -10,10 +10,7 @@ void main() async {
       url: 'https://juseziyejljmuhqsqomq.supabase.co',
       anonKey:
           'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp1c2V6aXllamxqbXVocXNxb21xIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQ2MzgyNDAsImV4cCI6MjAxMDIxNDI0MH0.o6TBdYxpNph0RdBsri9XWOzgWUslIRtcS-mgE4BRRTM');
-  // final Session? session = supabase.auth.currentSession;
-  // if (session != null) {
-  //   final email = session.user.email;
-  // }
+
   runApp(const MyApp());
 }
 
