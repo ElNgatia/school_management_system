@@ -1,4 +1,4 @@
-import 'user.dart';
+import 'package:school_management_system/models/user.dart';
 
 class Teacher extends User {
   final String tscNumber;
@@ -18,6 +18,8 @@ class Teacher extends User {
       required this.password,
       required this.classes,
       required this.subjects,
-      required this.isClassTeacher
+      this.isClassTeacher = false
       });
+
+
 }

@@ -1,7 +1,6 @@
-enum UserRole{
+enum UserRole {
+  accountant,
   admin,
   parent,
-  student,
   teacher,
 }
-

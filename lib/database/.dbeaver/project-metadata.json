@@ -1,0 +1,1 @@
+{"resources":{"Scripts/Script-1.sql":{"default-datasource":"postgres-jdbc-18a7af39025-5a474b1afc464f69","default-catalog":"postgres","default-schema":"public"},"Scripts/Script.sql":{"default-datasource":"mariaDB-18a64e16084-699342353736c827"}}}
